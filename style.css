@@ -1,7 +1,9 @@
-
+/*
 .label {
     font-size: 24px;
     font-weight: bold;
+    position: absolute;
+    z-index: 1;
 }
 
 
@@ -12,11 +14,11 @@ nav .nav-item {
 }
 
 
-.navbar-brand, .nav-link, .dropdown-toggle, .dropdown-item  {
+.navbar-brand, .nav-link, .dropdown-toggle, .dropdown-item {
     color: black;
     font-size: 20px;
-    font-weight: bold;}
-/* Your existing CSS styles */
+    font-weight: bold;
+}
 
 
 
@@ -25,13 +27,17 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
-    overflow: hidden;
+    /*ň overflow: hidden;/
 }
 
 .half-container {
+
     width: 50%;
     height: 100%;
     overflow: hidden;
+    position: relative;
+
+
 }
 
 .half-image {
@@ -39,61 +45,75 @@ body {
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    background-size: cover;
+    z-index: 0;
+    filter: brightness(0.8);
 }
-.logo-container {
+
+*/
+
+/*
+.label {
+    font-size: 45px;
+    color: red;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.half-container {
+    position: relative;
+}
+
+.half-image {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-
-.logo-center {
-    text-align: center;
-}
-
-.ny-logo {
-    width: 100px; /* Adjust the size as needed */
-}
-
-
-
-
-
-.bg-left {
-    width: 50%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
+    background-size: cover;
+}
+*/
+
+
+.label {
+
+    font-family: sans-serif;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    filter: brightness(0.3);
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
 }
 
-.bg-right {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    filter: brightness(0.3);
-}
 
-.logo-container {
-    width: 100%;
+
+
+body {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+    height: 100vh;
 }
 
-.logo-center {
-    text-align: center;
+.half-container {
+
+width: 50%;
+height: 100%;
+overflow: hidden;
+position: relative;
+
+
 }
 
-.ny-logo {
-    width: 100px; /* Adjust the size as needed */
+.half-image {
+width: 100%;
+height: 100%;
+object-fit: cover;
+cursor: pointer;
+background-size: cover;
+z-index: 0;
+filter: brightness(0.8);
 }
