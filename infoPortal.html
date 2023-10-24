@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="info.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+    <div class="container sticky-top bg-white mb-5 ">
+        <header class="blog-header py-5 ">
+            <div class="row flex-nowrap justify-content-between align-items-center ">
+
+                <div class="col-4 ">
+                    <!--    <a class="link-secondary" href="#">Subscribe</a> -->
+                </div>
+
+
+                <div class="col-4 text-center">
+
+                    <!--   <a class="blog-header-logo text-dark" href="#">Large</a> -->
+                    <img src="../images/logo/default-monochrome.svg" alt="Logo">
+
+                </div>
+                <div class="col-4 text-center ">
+
+
+                    <ul class="nav nav-pills justify-content-center">
+                        <li class="nav-item">
+                            <a href="coverPage.html">
+                                <button type="button" class="btn btn-dark">Domov</button>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link dropdown-toggle text-black" href="#" role="button" id="dropdownMenuLink"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i>
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">My account</a></li>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+
+                    <!--                <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>    -->
+                    <!--
+                                    <ul class="nav nav-pills justify-content-center">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link active" aria-current="page">Home</a>
+                                        </li>
+
+                                        <li class="nav-item">
+
+                                            <a class="nav-link dropdown-toggle text-black" href="#" role="button" id="dropdownMenuLink"
+                                               data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="bi bi-person-circle"></i>
+                                            </a>
+
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">My account</a></li>
+                                                <li><a class="dropdown-item" href="#">Log out</a></li>
+
+                                            </ul>
+                                        </li>
+
+
+                                    </ul>
+                    -->
+
+                </div>
+
+
+            </div>
+        </header>
+
+    </div>
+
+</header>
+
+
+<!-- carousel-->
+
+<!--
+ <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="col-md-12" >
+
+
+ -->
+<div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="col-md-4">
+        <div id="carroucel_index" class="carousel slide ">
+            <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="images/trh01.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>NAJNOVŠIE TOPÁNOČKY</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/trh02.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/trh03.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carroucel_index"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carroucel_index"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row g-5">
+        <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                JARMOKY, TRHY A HODY </h3>
+
+            <article class="blog-post">
+                <h2>Oktober</h2>
+                <hr>
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                           <th scope="col">Začiatok</th>
+                            <th scope="col">Koniec</th>
+                            <th scope="col">Názov</th>
+                            <th scope="col">Lokalita</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>23.09.2023</td>
+                        <td>16.12.2023</td>
+                        <td>Starožitnícke a Gazdovské trhy</td>
+                        <td>Nitra</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>25.10.2023</td>
+                        <td>27.10.2023</td>
+                        <td>Farmárske trhy</td>
+                        <td>Košice</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>27.10.2023</td>
+                        <td>27.10.2023</td>
+                        <td>Šimono-júdsky jarmok</td>
+                        <td>Námestovo</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+                <h2>November</h2>
+                <hr>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Začiatok</th>
+                        <th scope="col">Koniec</th>
+                        <th scope="col">Názov</th>
+                        <th scope="col">Lokalita</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+
+                        <th scope="row"></th>
+                        <td>02.11.2023</td>
+                        <td>03.11.2023</td>
+                        <td>Vianočné trhy - Bibliotéka</td>
+                        <td>Nitra</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>23.11.2023</td>
+                        <td>23.12.2023</td>
+                        <td>Vianočné trhy</td>
+                        <td>Bratislava</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>3.11.2023</td>
+                        <td>23.12.2023</td>
+                        <td>Vianočné trhy</td>
+                        <td>Žilina</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"></th>
+                        <td>21.11.2023</td>
+                        <td>31.12.2023</td>
+                        <td>Vianočné trhy</td>
+                        <td>Piešťany</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"></th>
+                        <td>3.11.2023</td>
+                        <td>23.12.2023</td>
+                        <td>Vianočné trhy</td>
+                        <td>Žilina</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"></th>
+                        <td>24.11.2023</td>
+                        <td>25.12.2023</td>
+                        <td>Mikulášske trhy</td>
+                        <td>Snina</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+
+
+
+
+
+
+
+
+                <h2>December</h2>
+                <hr>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Začiatok</th>
+                        <th scope="col">Koniec</th>
+                        <th scope="col">Názov</th>
+                        <th scope="col">Lokalita</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+
+                    <tr>
+
+                        <th scope="row"></th>
+                        <td>01.12.2023</td>
+                        <td>23.12.2023</td>
+                        <td>Adventná Nitra</td>
+                        <td>Nitra</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>01.12.2023</td>
+                        <td>03.12.2023</td>
+                        <td>Vianočné inšpirácie</td>
+                        <td>Modra</td>
+                    </tr>
+                    <tr>
+
+
+                        <th scope="row"></th>
+                        <td>01.12.2023</td>
+                        <td>23.12.2023</td>
+                        <td>Vianočné remeselné trhy</td>
+                        <td>Trenčín</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"></th>
+                        <td>02.12.2023</td>
+                        <td>02.12.2023</td>
+                        <td>Zaježovský vianočný jarmok</td>
+                        <td>Pliešovce</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"></th>
+                        <td>02.12.2023</td>
+                        <td>02.12.2023</td>
+                        <td>Vianočné trhy</td>
+                        <td>Dolná Krupá</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+
+
+
+
+
+            </article>
+
+
+        </div>
+        <div class="col-md-4">
+            <div class="position-sticky" style="top: 10rem;">
+
+                <div class="p-4 mb-3 bg-light rounded-top">
+                    <h4>KALENDÁR</h4>
+                    <div class="p-4 mb-3 bg-light rounded-top">
+                        <div class="calendar">
+                            <div class="calendar__picture ">
+                                <h3>November</h3>
+
+                            </div>
+
+
+                            <div class="calendar__date">
+                                <!-- dni nazov -->
+                                <div class="calendar__day">P</div>
+                                <div class="calendar__day">U</div>
+                                <div class="calendar__day">S</div>
+                                <div class="calendar__day">Š</div>
+                                <div class="calendar__day">P</div>
+                                <div class="calendar__day">S</div>
+                                <div class="calendar__day">N</div>
+
+                                <!-- dni cislo -->
+                                <div class="calendar__number"></div>
+                                <div class="calendar__number"></div>
+                                <div class="calendar__number">1</div>
+                                <div class="calendar__number">2</div>
+                                <div class="calendar__number">3</div>
+                                <div class="calendar__number">4</div>
+                                <div class="calendar__number">5</div>
+                                <div class="calendar__number">6</div>
+                                <div class="calendar__number">7</div>
+                                <div class="calendar__number">8</div>
+                                <div class="calendar__number">9</div>
+                                <div class="calendar__number">10</div>
+                                <div class="calendar__number">11</div>
+                                <div class="calendar__number">12</div>
+                                <div class="calendar__number">13</div>
+                                <div class="calendar__number">14</div>
+                                <div class="calendar__number">15</div>
+                                <div class="calendar__number">16</div>
+                                <div class="calendar__number">17</div>
+                                <div class="calendar__number">18</div>
+                                <div class="calendar__number">19</div>
+                                <div class="calendar__number">20</div>
+                                <div class="calendar__number">21</div>
+                                <div class="calendar__number">22</div>
+                                <div class="calendar__number">23</div>
+                                <div class="calendar__number">24</div>
+                                <div class="calendar__number">25</div>
+                                <div class="calendar__number">26</div>
+                                <div class="calendar__number">27</div>
+                                <div class="calendar__number">28</div>
+                                <div class="calendar__number">29</div>
+                                <div class="calendar__number">30</div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
