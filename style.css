@@ -1,40 +1,64 @@
-.label {
 
-    font-family: sans-serif;
-    position: absolute;
 
-    top: 50%;
-    left: 50%;
 
-    transform: translate(-50%, -50%);
+
+
+
+<!-- -->
+.nav-item {
+    font-size: larger;
+    border-color: black;
+    font-style: italic;
+}
+
+
+.calendar {
+    position: relative;
+    width: 300px;
+
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.calendar__picture {
+    position: relative;
+    height: 200px;
+    padding: 20px;
+    background: #262626 url("https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=183f2924ba5a8429441804609b2d4f61") no-repeat center / cover;
 }
 
 
 
+.calendar__date {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
 
-body {
-    margin: 0;
-    padding: 0;
+.calendar__day {
     display: flex;
-    height: 100vh;
-}
-
-.half-container {
-
-width: 50%;
-height: 100%;
-overflow: hidden;
-position: relative;
-
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    font-weight: 600;
+    color: #262626;
 
 }
 
-.half-image {
-width: 100%;
-height: 100%;
-object-fit: cover;
-cursor: pointer;
-background-size: cover;
-z-index: 0;
-filter: brightness(0.8);
+.calendar__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    color: #262626;
+}
+
+
+
+
+h1, h2, h3 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
